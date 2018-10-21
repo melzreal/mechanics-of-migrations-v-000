@@ -6,7 +6,7 @@ class CreateArtists < ActiveRecord::Migration
       t.integer :age
       t.string :hometown
     end
-  end 
+  end
 
   connection = ActiveRecord::Base.establish_connection(
   :adapter => "sqlite3",
@@ -22,7 +22,7 @@ class CreateArtists < ActiveRecord::Migration
   hometown TEXT
   )
   SQL
- 
+
   ActiveRecord::Base.connection.execute(sql)
 
 end
